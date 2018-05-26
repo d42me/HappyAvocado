@@ -1,0 +1,26 @@
+.LockCreation {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.TextBox {
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.Button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #B22222;
+    border: none;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+ 

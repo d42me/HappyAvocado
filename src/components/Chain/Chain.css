@@ -1,0 +1,62 @@
+.Chain {
+    margin-top: 100px;
+}
+
+.link {
+    display: inline-block;
+    position: relative;
+    width: 3rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background: #ff8e50;
+    background-image: linear-gradient( to right, #f8be5b 0%, #fef1c9 35%, #e69539 65%, #f7f2a0 100%);
+  }
+  
+  .link:before {
+    position: absolute;
+    content: "";
+    top: calc(50% - 0.5rem);
+    left: calc(50% - 1rem);
+    width: 2rem;
+    height: 1rem;
+    border-radius: inherit;
+    background: #ffffff;
+  }
+  
+  .link:after {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    width: 2rem;
+    height: 0.5rem;
+    top: calc(50% - 0.25rem);
+    right: -1rem;
+    background: #ff8e50;
+    border-radius: 1rem;
+    background-image: linear-gradient( to bottom, #f8be5b 0%, #fef1c9 35%, #e69539 65%, #f7f2a0 100%);
+  }
+  
+  .lock {
+    position: absolute;
+    z-index:9;
+    width: 2rem;
+    height: 1.5rem;
+    background: #ff8e50;
+    background-image: linear-gradient( to right, #f8be5b 0%, #fef1c9 35%, #e69539 65%, #f7f2a0 100%);  
+    top: calc(100% + 0.25rem);
+    margin-left: 0.75rem;
+  }
+  
+  .lock:before {
+      content: "";
+      position: absolute;
+      height: 1.5rem;
+      width: 1.5rem;
+      bottom: 97%;
+      border-radius: 100% 100% 0 0;
+      margin-left: 0.25rem;
+      background: 
+      radial-gradient(circle at bottom, transparent 12%, #000 13%) -33% -37px/100% 200% no-repeat,
+      linear-gradient(to right,transparent 77%,#000 0),
+      linear-gradient(to right,#000 23%,transparent 0) 0px 19px/100% 100% no-repeat;
+  }
